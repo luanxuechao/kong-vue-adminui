@@ -11,7 +11,7 @@
   </el-header>
   <el-container style="height:100%">
     <el-aside width="200px" style="background-color: rgb(238, 241, 246)">  
-      <el-menu  class="el-menu-vertical-demo">
+      <el-menu  default-active="1" class="el-menu-vertical-demo">
       <el-menu-item index="1" >
       <i class="el-icon-setting"></i>
       <span slot="title">Services</span>

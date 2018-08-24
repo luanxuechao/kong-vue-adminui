@@ -8,7 +8,7 @@ export default new Router({
       {
         path: '/',
         name: 'index',
-        redirect:'/Menus'
+        redirect:'/Service'
       },
       {
       path: '/Menus',
