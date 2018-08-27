@@ -5,17 +5,17 @@
             <el-button class="filter-item" style='margin-left:10px' type="primary" icon="el-icon-search"> 搜索</el-button>
         </div>
         <el-table :data="tableData" stripe border style="width: 100%">
-            <el-table-column prop="id" label="id" width="320">
+            <el-table-column prop="id"  align="center" label="id" width="320">
             </el-table-column>
-            <el-table-column prop="name" label="名称" width="180">
+            <el-table-column prop="name" align="center" label="名称" width="180">
             </el-table-column>
-            <el-table-column prop="port" label="端口" width="100">
+            <el-table-column prop="port"  align="center" label="端口" width="100">
             </el-table-column>
-            <el-table-column prop="created_at" label="创建时间" :formatter="filterDate" width="180">
+            <el-table-column prop="created_at"  align="center" label="创建时间" :formatter="filterDate" width="180">
             </el-table-column>
-            <el-table-column prop="updated_at" label="更新时间" :formatter="filterDate" width="180">
+            <el-table-column prop="updated_at" align="center" label="更新时间" :formatter="filterDate" width="180">
             </el-table-column>
-            <el-table-column label="操作" width="180">
+            <el-table-column label="操作" align="center" width="180">
                 <template slot-scope="scope">
                     <el-button type="primary" size="small">
                         编辑
@@ -36,59 +36,7 @@
     export default {
         data() {
             return {
-                tableData: [{
-                    "host": "blockchain.service",
-                    "created_at": 1531289243,
-                    "connect_timeout": 60000,
-                    "id": "27aadc0e-7697-4762-a8e2-838ab882f51b",
-                    "protocol": "http",
-                    "name": "blockchain-service",
-                    "read_timeout": 60000,
-                    "port": 80,
-                    "path": null,
-                    "updated_at": 1531289243,
-                    "retries": 5,
-                    "write_timeout": 60000
-                }, {
-                    "host": "blockchain.service",
-                    "created_at": 1531289243,
-                    "connect_timeout": 60000,
-                    "id": "27aadc0e-7697-4762-a8e2-838ab882f51b",
-                    "protocol": "http",
-                    "name": "blockchain-service",
-                    "read_timeout": 60000,
-                    "port": 80,
-                    "path": null,
-                    "updated_at": 1531289243,
-                    "retries": 5,
-                    "write_timeout": 60000
-                }, {
-                    "host": "blockchain.service",
-                    "created_at": 1531289243,
-                    "connect_timeout": 60000,
-                    "id": "27aadc0e-7697-4762-a8e2-838ab882f51b",
-                    "protocol": "http",
-                    "name": "blockchain-service",
-                    "read_timeout": 60000,
-                    "port": 80,
-                    "path": null,
-                    "updated_at": 1531289243,
-                    "retries": 5,
-                    "write_timeout": 60000
-                }, {
-                    "host": "blockchain.service",
-                    "created_at": 1531289243,
-                    "connect_timeout": 60000,
-                    "id": "27aadc0e-7697-4762-a8e2-838ab882f51b",
-                    "protocol": "http",
-                    "name": "blockchain-service",
-                    "read_timeout": 60000,
-                    "port": 80,
-                    "path": null,
-                    "updated_at": 1531289243,
-                    "retries": 5,
-                    "write_timeout": 60000
-                }]
+                tableData: []
             }
         },
         created() {
